@@ -1,42 +1,51 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root{
+  --textandiconColor:rgb(228, 228, 228);
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.sideBar{
+  height: 100vh;
+  width: 4.5em;
+  overflow: hidden;
+  transition: max-width 0.5s ease-in-out;
+  background: rgb(0,9,77);
+  background: linear-gradient(90deg, rgba(0,9,77,1) 0%, rgba(0,13,106,1) 100%);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  transition: .3s ease-in-out;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.sideBar:hover{
+  width: 10em;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.sideBar ul{
+  margin: auto;
+  list-style: none;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sideBar ul li{
+  color: var(--textandiconColor);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  gap: 1em;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  transition: .2s;
+  cursor: pointer;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.sideBar ul li:hover{
+  background: rgb(0, 6, 48);  
+  border-left-style: solid;
+  border-left-width: 3px;
 }
-
-.card {
-  padding: 2em;
+.sideBar p{
+  font-size: 1.2em;
+  pointer-events: none;
 }
-
-.read-the-docs {
-  color: #888;
+.sideBar svg{
+  fill: var(--textandiconColor);
+  width: 2.5em;
+  height: 2.5em;
 }
