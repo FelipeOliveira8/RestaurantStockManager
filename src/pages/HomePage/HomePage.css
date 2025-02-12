@@ -1,0 +1,141 @@
+:root{
+    --boxColor:rgb(243, 243, 243); 
+}
+.open-sans{
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+body{
+    background-color: rgb(221, 221, 221);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.info{
+    display: flex;
+    margin-top: 3em;
+}
+.info div{
+    border-radius: 0.2em;
+    margin: auto;
+    height: 8em;
+    background-color: var(--boxColor);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.order{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.order button{
+    width: 90%;
+    height: 40%;
+    border-radius: 0.3em;
+    margin: auto;
+    border-style: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+.openNewOrder{
+    background-color: #2CDA22;
+}
+.openNewOrder:hover{
+    background-color: #1e9b18;
+}
+.Registers{
+    background-color: #26C9C9;
+}
+.Registers:hover{
+    background-color: #157a7a;
+}
+.financialResults{
+    width: 60%;
+    display: flex;
+}
+.financialResults div{
+    width: 28%;
+    height: 80%;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+}
+.financialResults div:nth-child(1){
+    background-color: #1BC940;
+}
+.financialResults div:nth-child(2){
+    background-color: #2073AE;
+}
+.financialResults div:nth-child(3){
+    background-color: #EABA1E;
+}
+.financialResults div p:nth-child(1){
+    text-align: left;
+    font-size: 1.2em;
+    padding: 0.5em;
+}
+.financialResults div p:nth-child(2){
+    text-align: right;
+    font-size: 2em;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+    padding-right: 0.2em;
+}
+.orders{
+    padding: 3em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+.orderBox{
+    background-color: var(--boxColor);
+    padding: 1em;
+    border-radius: 0.2em;
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+}
+.orderBox div:nth-child(1){
+    width: 65%;
+    height: 100%;
+}
+.orderBox div a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
+}
+.orderBox div h3{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 0.5em;
+    color: rgb(88, 88, 88);
+}
+.orderBox div:nth-child(2){
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.orderBox button{
+    border-radius: 0.2em;
+    font-size: 1.3em;
+    border-style: none;
+    color: white;
+    width: 100%;
+    height: 40%;
+    cursor: pointer;
+}
+.orderBox button:nth-child(1){
+    background-color: #2CDA22;
+}
+.orderBox button:nth-child(2){
+    background-color: red;
+}
