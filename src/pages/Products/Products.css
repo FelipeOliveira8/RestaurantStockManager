@@ -1,0 +1,40 @@
+.registerFunction{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.registerFunction button{
+    width: 80%;
+    margin: auto;
+    height: 4em;
+    border-style: none;
+    border-radius: 0.2em;
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #2CDA22;
+    font-weight: bold;
+    transition: .1s ease-in-out;
+}
+.registerFunction button:hover{
+    background-color: #1e9b18;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5em;
+    width: 98%;
+    margin: auto;
+    margin-top: 3em;
+    padding-bottom: 3em;
+}
+.edit{
+    width: 4em;
+    height: 2em;
+    background-color: #105cff;
+    border-style: none;
+    border-radius: 0.5em;
+    margin: auto;
+    color: white;
+    cursor: pointer;
+}

@@ -5,6 +5,7 @@ import SideBar from './pages/SideBar/SideBar';
 import Products from './pages/Products/Products';
 import Stock from './pages/Stock/Stock';
 import Clients from './pages/Clients/Clients';
+import NewOrder from './pages/SubPages/NewOrder/NewOrder';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/Products" element={<Products />} />
             <Route path="/Stock" element={<Stock />} />
             <Route path="/Clients" element={<Clients />} />
+            <Route path="/NewOrder" element={<NewOrder />} />
         </Routes>
       </div>
     </BrowserRouter>

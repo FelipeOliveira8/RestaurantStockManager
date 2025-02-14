@@ -1,6 +1,9 @@
 import "./HomePage.css"
+import {useNavigate } from 'react-router-dom';
+
 
 function HomePage(){
+    const navigate = useNavigate();
     return(
         <>
             <section>
@@ -10,7 +13,7 @@ function HomePage(){
                             <button className="Registers">
                                 Registros
                             </button>
-                            <button className="openNewOrder">
+                            <button className="openNewOrder" onClick={() => navigate('/NewOrder')}>
                                 Abrir Novo Pedido
                             </button>
                         </div>
